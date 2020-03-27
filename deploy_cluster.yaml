@@ -1,0 +1,11 @@
+---
+imports:
+- path: kubernetes_engine.py
+
+resources:
+- name: cluster
+  type: kubernetes_engine.py
+  properties:
+    CLUSTER_NAME: myproject
+    CLUSTER_ZONE: us-west1-c
+    NUM_NODES: 1
